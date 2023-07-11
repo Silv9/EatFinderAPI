@@ -1,0 +1,66 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre":"Silvia Ortiz",
+  "celular":3152451707,
+  "contrasenia":"silvia1234",
+  "username":"silvia99",
+  "pref_comida":"Rápidas",
+  "ubi_actual":"Manizales,CO",
+  "email":"lady9803@gmail.com"
+
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/64ab61b49c1f22c002391c11 HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/e/sajulia9@gmail.com HTTP/1.1
+
+
+###
+
+PUT http://localhost:9000/api/users/64ab61b49c1f22c002391c11 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre":"Silvia Ortiz",
+  "celular":3152451707,
+  "contrasenia":"silvia1234",
+  "username":"silvia99",
+  "pref_comida":"Rápidas",
+  "ubi_actual":"Manizales,CO",
+  "email":"sajulia9@gmail.com"
+
+}
+
+
+###
+
+DELETE http://localhost:9000/api/users/64ab61b49c1f22c002391c11 HTTP/1.1
+
+###
+
+POST http://localhost:9000/api/restaurant HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Zona Big",
+    "tipo_comida":"Rápida",
+    "calificacion":4,
+    "direccion":"Cra. 18b #45b 03, Manizales, Caldas",
+    "coordenadas":"3F9X+PP Manizales, Caldas",
+    "telefono":6068857239,
+    "menu":"{hamburguesa:5000,perro:30000, arepaburguer:15000}",
+    "comentarios":"{'Tatiana Granada':'Rápido y económico'}",
+    "plato_destacable":"Hamburguesa",
+    "prom_valor": 12000
+}
+
+###
+GET http://localhost:9000/api/restaurant HTTP/1.1
