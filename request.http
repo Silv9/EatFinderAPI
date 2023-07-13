@@ -1,15 +1,15 @@
 ###
-POST http://localhost:9000/api/users HTTP/1.1
+POST http://localhost:8080/api/users HTTP/1.1
 Content-Type: application/json
 
 {
-  "nombre":"Silvia Ortiz",
-  "celular":3152451707,
-  "contrasenia":"silvia1234",
-  "username":"silvia99",
-  "pref_comida":"Rápidas",
-  "ubi_actual":"Manizales,CO",
-  "email":"lady9803@gmail.com"
+  "celular":"43",
+  "contrasenia":"hola",
+  "email":"345",
+  "nombre":"45",
+  "pref_comida":"456",
+  "ubi_actual":"456",
+  "username":"345"
 
 }
 
@@ -50,17 +50,34 @@ POST http://localhost:9000/api/restaurant HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombre":"Zona Big",
+    "nombre":"Sayonara",
     "tipo_comida":"Rápida",
-    "calificacion":4,
-    "direccion":"Cra. 18b #45b 03, Manizales, Caldas",
-    "coordenadas":"3F9X+PP Manizales, Caldas",
-    "telefono":6068857239,
-    "menu":"{hamburguesa:5000,perro:30000, arepaburguer:15000}",
-    "comentarios":"{'Tatiana Granada':'Rápido y económico'}",
+    "calificacion":5,
+    "direccion":"Av. 30 de Agosto # 41 - 84 Av. Circunvalar Calle 7 # 14 – 43 Pereira,Risaralda",
+    "coordenadas":"R848+X4 Pereira, Risaralda",
+    "telefono":3232234363,
+    "menu":"{mariscos:30000, burguer:15000}",
+    "comentarios":"",
     "plato_destacable":"Hamburguesa",
-    "prom_valor": 12000
+    "prom_valor": 35000
 }
 
 ###
 GET http://localhost:9000/api/restaurant HTTP/1.1
+
+###
+GET http://localhost:9000/api/evaluat HTTP/1.1
+
+###
+
+
+POST http://localhost:9000/api/evaluat HTTP/1.1
+Content-Type: application/json
+
+{
+
+  "id_restaurante":"64acb210ad05a2c6f85f0197",
+  "cant_estrellas":3,
+  "comentario":"Estuvo super la atención",
+  "id_usuario":"Tatiana Granada"
+}

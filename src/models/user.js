@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const userSchema = mongoose.Schema({
 
     celular:{
-        type:Number,
+        type:String,
         required: true
     },
     nombre:{
